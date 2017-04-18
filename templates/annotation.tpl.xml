@@ -1,0 +1,32 @@
+<annotation>
+	<folder>{{folder_name}}</folder>
+	<filename>{{file_number}}.jpg</filename>
+	<source>
+		<database>Custom</database>
+		<annotation>Custom annotation</annotation>
+		<image>empty</image>
+		<flickrid></flickrid>
+	</source>
+	<owner>
+		<flickrid></flickrid>
+		<name>Generic name</name>
+	</owner>
+	<size>
+		<width>{{img.shape[1]}}</width>
+		<height>{{img.shape[0]}}</height>
+		<depth>{{img.shape[2]}}</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>{{label}}</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>{{bbox[0]}}</xmin>
+			<ymin>{{bbox[1]}}</ymin>
+			<xmax>{{bbox[2]}}</xmax>
+			<ymax>{{bbox[3]}}</ymax>
+		</bndbox>
+	</object>
+</annotation>
